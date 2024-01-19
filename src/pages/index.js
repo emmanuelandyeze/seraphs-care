@@ -2,10 +2,10 @@ import Head from 'next/head';
 import { Inter } from 'next/font/google';
 import Layout from '@/components/Layout';
 import Image from 'next/image';
-import ProfilePic from '../../public/images/profile/emmanuel.png';
+import ProfilePic from '../../public/images/landing.png';
+import AboutPic from '../../public/images/landing.png';
 import AnimatedText from '@/components/AnimatedText';
 import Link from 'next/link';
-import profilePic from '../../public/images/profile/emmanuel.png';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -13,10 +13,10 @@ export default function Home() {
 	return (
 		<>
 			<Head>
-				<title>Emmanuel Andy Eze</title>
+				<title>Seraphs Care</title>
 				<meta
 					name="description"
-					content="Full Stack Developer | Mobile App Developer | Web Developer."
+					content="Social Care Website for Seraphs Care"
 				/>
 			</Head>
 			<main className="flex items-center text-dark w-full min-h-screen dark:text-light ">
@@ -33,46 +33,45 @@ export default function Home() {
 						</div>
 						<div className="w-1/2 flex flex-col items-start self-center lg:w-full lg:text-center md:mt-2">
 							<AnimatedText
-								text={'Hi, I am Emmanuel Andy Eze.'}
+								text={"Welcome to Seraph's Care"}
 								className="!text-6xl text-left xl:!text-5xl !leading-normal lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
 							/>
 
 							<p className="py-4 text-md font-medium md:text-md sm:text-md lg:text-lg xl:text-xl">
-								Full Stack Developer | Mobile App Developer
-								| Web Developer.
+								Empowering Lives, Nurturing Well-being: Your
+								Gateway to Compassionate Health and Social
+								Care.
 							</p>
 							<div className="flex items-center self-start mt-2 lg:self-center">
 								<Link
-									href={'https://wa.link/gzl3vq'}
+									href={'/'}
 									target="_blank"
 									className="flex items-center bg-dark text-light md:p-2 md:px-4 md:text-base dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark mr-2"
 								>
-									Hire Me
+									About Us
 								</Link>
 								<Link
-									href={'/projects'}
+									href={'/'}
 									className="flex items-center bg-light text-dark md:p-2 md:px-4 md:text-base dark:bg-dark dark:text-light hover:dark:bg-light hover:dark:text-dark hover:dark:border-dark p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-dark hover:text-light border-2 border-solid border-transparent hover:border-light"
 								>
-									View Projects
+									Get Involved
 								</Link>
 							</div>
 						</div>
 					</div>
 				</Layout>
 			</main>
-			{/* <main className="flex w-full flex-col items-center justify-center">
+			<main className="flex w-full flex-col items-center justify-center">
 				<Layout className="pt-10 !bg-dark">
 					<AnimatedText
-						text={
-							'Your Vision. Our Expertise. Success Unleashed.'
-						}
+						text={'Empowering Lives, Nurturing Well-being'}
 						className="mb-16 !text-6xl lg:!text-6xl sm:!text-5xl xs:!text-4xl sm:mb-8 !text-light"
 					/>
 					<div className="grid w-full grid-cols-6 gap-16 lg:flex lg:flex-col sm:justify-center">
 						<div className="col-span-3 relative sm:hidden md:hidden   rounded-2xl border-2 border-solid border-dark dark:border-light bg-light !bg-dark dark:bg-dark p-8">
 							<div className="absolute top-0 -right-3 -z-10 2-[102%] h-[103%] rounded-[2rem] !bg-dark dark:bg-light" />
 							<Image
-								src={profilePc}
+								src={AboutPic}
 								alt=""
 								className="w-full h-auto rounded-2xl"
 								priority
@@ -85,35 +84,30 @@ export default function Home() {
 									About Us
 								</h2>
 								<p>
-									Welcome to Creo, where we turn your ideas
-									into powerful software solutions. Whether
-									you are an ambitious entrepreneur, a
-									dynamic startup, or a well-established
-									enterprise, our mission is to unleash the
-									full potential of technology for your
-									success. Our skilled team of developers
-									and designers is committed to crafting
-									tailored solutions that align with your
-									unique vision. Whether you seek a
-									cutting-edge web app, a seamless mobile
-									app, or bespoke custom software, we are
-									here to empower your business with the
-									tools it needs to thrive.
+									Lorem ipsum dolor sit amet consectetur
+									adipisicing elit. Doloribus perspiciatis
+									unde rem dolores expedita accusantium
+									praesentium iure aspernatur, eaque numquam
+									dolor obcaecati vel minus quaerat
+									assumenda error sit eos distinctio. Lorem
+									ipsum dolor sit amet consectetur
+									adipisicing elit. Doloribus perspiciatis
+									unde rem dolores expedita accusantium
+									praesentium iure aspernatur, eaque numquam
+									dolor obcaecati vel minus quaerat
+									assumenda error sit eos distinctio.
 								</p>
 								<br />
 								<p>
-									Discover remarkable projects we have
-									brought to life for businesses like yours.
-									From sleek e-commerce platforms to
-									data-driven applications, our portfolio
-									reflects top-tier software solutions.
+									Lorem ipsum dolor sit amet consectetur
+									adipisicing elit. Doloribus perspiciatis
+									unde rem dolores expedita accusantium
+									praesentium iure aspernatur, eaque numquam
+									dolor obcaecati vel minus quaerat
+									assumenda error sit eos distinctio.
 								</p>{' '}
 								<br />
-								<p>
-									Let Creo be your trusted partner on this
-									transformative journey.
-								</p>
-								<div className="flex flex-row justify-between mt-10 dark:text-light">
+								{/* <div className="flex flex-row justify-between mt-10 dark:text-light">
 									<div className="flex flex-col items-center justify-center">
 										<span className="inline-block text-7xl sm:text-3xl font-bold">
 											10+
@@ -138,26 +132,26 @@ export default function Home() {
 											years of experience
 										</h2>
 									</div>
-								</div>
+								</div> */}
 								<div className="flex  sm:justify-center sm:mx-auto items-center self-center mt-2 lg:self-center sm:self-center pt-8">
 									<Link
-										href={'/hire'}
+										href={'/'}
 										className="flex items-center bg-dark text-light md:p-2 md:px-4 md:text-base dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark mr-2"
 									>
 										Hire Us
 									</Link>
-									<Link
-										href={'/projects'}
+									{/* <Link
+										href={'/'}
 										className="flex items-center bg-light text-dark md:p-2 md:px-4 md:text-base dark:bg-dark dark:text-light hover:dark:bg-light hover:dark:text-dark hover:dark:border-dark p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-dark hover:text-light border-2 border-solid border-transparent hover:border-light"
 									>
 										View Projects
-									</Link>
+									</Link> */}
 								</div>
 							</div>
 						</div>
 					</div>
 				</Layout>
-			</main> */}
+			</main>
 		</>
 	);
 }

@@ -108,22 +108,20 @@ const Navbar = () => {
 						className="mr-4"
 					/>
 					<CustomLink
-						href={'/about'}
-						title={'About'}
+						href={'/aboutus'}
+						title={'About Us'}
 						className="mx-4"
 					/>
 					<CustomLink
-						href={'/projects'}
-						title="Projects"
+						href={'/contact'}
+						title="Contact Us"
 						className="mx-4"
 					/>
 				</nav>
 
 				<nav className="flex items-center justify-center flex-wrap">
 					<motion.a
-						href={
-							'https://x.com/EmmanuelAndyEze?t=VWL0nBaqYYdnBhLc3IUxUw&s=09'
-						}
+						href={'#'}
 						target="_blank"
 						whileHover={{
 							y: -2,
@@ -133,7 +131,7 @@ const Navbar = () => {
 					>
 						<TwitterIcon />
 					</motion.a>
-					<motion.a
+					{/* <motion.a
 						href={'https://github.com/emmanuelandyeze'}
 						target="_blank"
 						whileHover={{
@@ -143,8 +141,8 @@ const Navbar = () => {
 						className="w-6 mx-3"
 					>
 						<GithubIcon />
-					</motion.a>
-					<motion.a
+					</motion.a> */}
+					{/* <motion.a
 						href={
 							'https://www.linkedin.com/in/emmanuel-andy-eze-55833b216/'
 						}
@@ -156,10 +154,10 @@ const Navbar = () => {
 						className="w-6 mx-3"
 					>
 						<LinkedInIcon />
-					</motion.a>
+					</motion.a> */}
 
 					<motion.a
-						href={'https://wa.link/gzl3vq'}
+						href={'#'}
 						target="_blank"
 						whileHover={{
 							y: -2,
@@ -207,22 +205,20 @@ const Navbar = () => {
 							toggle={handleClick}
 						/>
 						<CustomMobileLink
-							href={'/about'}
-							title={'About'}
+							href={'/aboutus'}
+							title={'About Us'}
 							toggle={handleClick}
 						/>
 						<CustomMobileLink
-							href={'/projects'}
-							title="Projects"
+							href={'/contact'}
+							title="Contact Us"
 							toggle={handleClick}
 						/>
 					</nav>
 
 					<nav className="flex items-center justify-center flex-wrap mt-2">
 						<motion.a
-							href={
-								'https://x.com/EmmanuelAndyEze?t=VWL0nBaqYYdnBhLc3IUxUw&s=09'
-							}
+							href={'/'}
 							target="_blank"
 							whileHover={{
 								y: -2,
@@ -233,9 +229,7 @@ const Navbar = () => {
 							<TwitterIcon />
 						</motion.a>
 						<motion.a
-							href={
-								'https://www.linkedin.com/in/emmanuel-andy-eze-55833b216/'
-							}
+							href={'/'}
 							target="_blank"
 							whileHover={{
 								y: -2,
@@ -245,7 +239,7 @@ const Navbar = () => {
 						>
 							<LinkedInIcon />
 						</motion.a>
-						<motion.a
+						{/* <motion.a
 							href={'https://github.com/emmanuelandyeze'}
 							target="_blank"
 							whileHover={{
@@ -255,9 +249,9 @@ const Navbar = () => {
 							className="w-6 mx-3"
 						>
 							<GithubIcon />
-						</motion.a>
+						</motion.a> */}
 						<motion.a
-							href={'https://wa.link/gzl3vq'}
+							href={'#'}
 							target="_blank"
 							whileHover={{
 								y: -2,
@@ -287,17 +281,20 @@ const Navbar = () => {
 				</motion.div>
 			) : null}
 
-			<div className="flex-col justify-center items-center hidden lg:flex">
+			{/* <div className="flex-col justify-center items-center hidden lg:flex">
 				<Link
-					href={'https://wa.link/gzl3vq'}
+					href={'/'}
 					className="flex items-center sm:mr-0 bg-dark text-light md:p-2 md:px-4 md:text-base dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark mr-0"
 				>
-					Hire Me
+					About Us
 				</Link>
-			</div>
+			</div> */}
 
 			<div className="absolute left-[50%] sm:left-[50%] top-2 translate-x-[-50%]">
-				<Logo isOpen={isOpen} setIsOpen={setIsOpen} />
+				{/* <Logo isOpen={isOpen} setIsOpen={setIsOpen} /> */}
+				<h2 className="font-bold sm:text-lg md:text-2xl sm:pt-4 md:pt-6">
+					Seraphs Care
+				</h2>
 			</div>
 		</header>
 	);

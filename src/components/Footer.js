@@ -9,7 +9,7 @@ const Footer = () => {
 			<Layout className="py-8 flex items-center justify-between lg:flex-col lg:py-6 ">
 				<span>
 					{new Date().getFullYear()} &copy; All Rights
-					Reserved.
+					Reserved. Seraphs Care
 				</span>
 				{/* <div className="flex items-center lg:py-2">
 					
@@ -20,9 +20,9 @@ const Footer = () => {
 						E.A.E
 					</Link>
 				</div> */}
-				<div>
+				{/* <div>
 					<Link
-						href={'https://wa.me/2349165095973'}
+						href={'#'}
 						className="flex items-center"
 					>
 						<BsWhatsapp
@@ -32,7 +32,7 @@ const Footer = () => {
 						/>
 						<p>Chat with Me</p>
 					</Link>
-				</div>
+				</div> */}
 			</Layout>
 		</footer>
 	);
