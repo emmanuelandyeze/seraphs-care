@@ -5,8 +5,8 @@ import { BsWhatsapp } from 'react-icons/bs';
 
 const Footer = () => {
 	return (
-		<footer className="w-full border-t-2 border-solid border-dark dark:border-light font-medium text-lg sm:text-base dark:text-light">
-			<Layout className="py-8 flex items-center justify-between lg:flex-col lg:py-6 ">
+		<footer className="w-full !bg-[#E4E7F0] border-t-2 border-solid border-dark dark:border-light font-medium text-lg sm:text-base dark:text-light">
+			<Layout className="py-8 !bg-[#E4E7F0] flex items-center justify-between lg:flex-col lg:py-6 ">
 				<span>
 					{new Date().getFullYear()} &copy; All Rights
 					Reserved. Seraphs Care

@@ -74,7 +74,13 @@ const Navbar = () => {
 		setIsOpen(!isOpen);
 	};
 	return (
-		<header className="w-full px-32 py-8 font-medium flex items-center justify-between dark:text-light relative z-10 lg:px-16 md:px-12 sm:px-4">
+		<header className="w-full px-32 py-8 font-medium !bg-[#E4E7F0] flex items-center justify-between dark:text-light relative z-10 lg:px-16 md:px-12 sm:px-4">
+			<div className="hidden sm:flex">
+				{/* <Logo isOpen={isOpen} setIsOpen={setIsOpen} /> */}
+				<h2 className="font-bold sm:text-2xl text-[#232E5D] md:text-4xl sm:pt-0 lg:pt-10">
+					Seraphs Care
+				</h2>
+			</div>
 			<button
 				className="flex-col justify-center items-center hidden lg:flex"
 				onClick={handleClick}
@@ -101,6 +107,12 @@ const Navbar = () => {
 			</button>
 
 			<div className="w-full flex justify-between items-center lg:hidden">
+				<div className="">
+					{/* <Logo isOpen={isOpen} setIsOpen={setIsOpen} /> */}
+					<h2 className="font-bold sm:text-2xl text-[#232E5D] md:text-4xl sm:pt-4 lg:pt-10">
+						Seraphs Care
+					</h2>
+				</div>
 				<nav>
 					<CustomLink
 						href={'/'}
@@ -168,7 +180,7 @@ const Navbar = () => {
 						<BsWhatsapp size={20} color="green" />
 					</motion.a>
 
-					<button
+					{/* <button
 						onClick={() =>
 							setMode(mode === 'light' ? 'dark' : 'light')
 						}
@@ -183,7 +195,7 @@ const Navbar = () => {
 						) : (
 							<MoonIcon className={'fill-dark'} />
 						)}
-					</button>
+					</button> */}
 				</nav>
 			</div>
 
@@ -261,7 +273,7 @@ const Navbar = () => {
 						>
 							<BsWhatsapp size={24} color="green" />
 						</motion.a>
-						<button
+						{/* <button
 							onClick={() =>
 								setMode(mode === 'light' ? 'dark' : 'light')
 							}
@@ -276,7 +288,7 @@ const Navbar = () => {
 							) : (
 								<MoonIcon className={'fill-dark'} />
 							)}
-						</button>
+						</button> */}
 					</nav>
 				</motion.div>
 			) : null}
@@ -289,13 +301,6 @@ const Navbar = () => {
 					About Us
 				</Link>
 			</div> */}
-
-			<div className="absolute left-[50%] sm:left-[50%] top-2 translate-x-[-50%]">
-				{/* <Logo isOpen={isOpen} setIsOpen={setIsOpen} /> */}
-				<h2 className="font-bold sm:text-lg md:text-2xl sm:pt-4 md:pt-6">
-					Seraphs Care
-				</h2>
-			</div>
 		</header>
 	);
 };
