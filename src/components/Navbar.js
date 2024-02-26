@@ -75,12 +75,17 @@ const Navbar = () => {
 	};
 	return (
 		<header className="w-full px-32 py-8 font-medium !bg-[#E4E7F0] flex items-center justify-between dark:text-light relative z-10 lg:px-16 md:px-12 sm:px-4">
-			<div className="hidden sm:flex">
+			<Link href={'/'} className="hidden sm:flex">
 				{/* <Logo isOpen={isOpen} setIsOpen={setIsOpen} /> */}
-				<h2 className="font-bold sm:text-2xl text-[#232E5D] md:text-4xl sm:pt-0 lg:pt-10">
+				{/* <h2 className="font-bold sm:text-2xl text-[#232E5D] md:text-4xl sm:pt-0 lg:pt-10">
 					Seraphs Care
-				</h2>
-			</div>
+				</h2> */}
+				<img
+					src="/images/logo.png"
+					alt=""
+					className="h-20 w-20"
+				/>
+			</Link>
 			<button
 				className="flex-col justify-center items-center hidden lg:flex"
 				onClick={handleClick}
@@ -107,12 +112,17 @@ const Navbar = () => {
 			</button>
 
 			<div className="w-full flex justify-between items-center lg:hidden">
-				<div className="">
+				<Link href={'/'} className="">
 					{/* <Logo isOpen={isOpen} setIsOpen={setIsOpen} /> */}
-					<h2 className="font-bold sm:text-2xl text-[#232E5D] md:text-4xl sm:pt-4 lg:pt-10">
+					{/* <h2 className="font-bold sm:text-2xl text-[#232E5D] md:text-4xl sm:pt-4 lg:pt-10">
 						Seraphs Care
-					</h2>
-				</div>
+					</h2> */}
+					<img
+						src="/images/logo.png"
+						alt=""
+						className="h-20 w-20"
+					/>
+				</Link>
 				<nav>
 					<CustomLink
 						href={'/'}
@@ -134,7 +144,7 @@ const Navbar = () => {
 				<nav className="flex items-center justify-center flex-wrap">
 					<motion.a
 						href={'#'}
-						target="_blank"
+						// target="_blank"
 						whileHover={{
 							y: -2,
 						}}
@@ -170,7 +180,7 @@ const Navbar = () => {
 
 					<motion.a
 						href={'#'}
-						target="_blank"
+						// target="_blank"
 						whileHover={{
 							y: -2,
 						}}
@@ -231,7 +241,7 @@ const Navbar = () => {
 					<nav className="flex items-center justify-center flex-wrap mt-2">
 						<motion.a
 							href={'/'}
-							target="_blank"
+							// target="_blank"
 							whileHover={{
 								y: -2,
 							}}
@@ -240,9 +250,9 @@ const Navbar = () => {
 						>
 							<TwitterIcon />
 						</motion.a>
-						<motion.a
+						{/* <motion.a
 							href={'/'}
-							target="_blank"
+							// target="_blank"
 							whileHover={{
 								y: -2,
 							}}
@@ -250,7 +260,7 @@ const Navbar = () => {
 							className="w-6 ml-3 sm:mx-1"
 						>
 							<LinkedInIcon />
-						</motion.a>
+						</motion.a> */}
 						{/* <motion.a
 							href={'https://github.com/emmanuelandyeze'}
 							target="_blank"
@@ -264,7 +274,7 @@ const Navbar = () => {
 						</motion.a> */}
 						<motion.a
 							href={'#'}
-							target="_blank"
+							// target="_blank"
 							whileHover={{
 								y: -2,
 							}}
