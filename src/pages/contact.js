@@ -59,7 +59,7 @@ const contact = () => {
 								075-592-11503
 							</p>
 							<p className="text-md text-[#232E5D] font-medium md:text-md sm:text-md lg:text-lg xl:text-xl">
-								+44 7367 755122
+								073-677-55122
 							</p>
 							<br />
 							<h1 className="text-[#232E5D] text-2xl font-bold">
